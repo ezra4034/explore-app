@@ -2,9 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import * as THREE from "three";
 
 // ── API Keys ──────────────────────────────────────────────────────────────────
-const GROQ_KEY = "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";
-const GEO_KEY  = "e44ec5098f324be484c4cb876959686f";
-
+const GROQ_KEY = import.meta.env.VITE_GROQ_KEY;
+const GEO_KEY  = import.meta.env.VITE_GEO_KEY;
 // ── Quick Suggestions ─────────────────────────────────────────────────────────
 const SUGGESTIONS = [
   ["🍣", "Romantic sushi nearby"],
